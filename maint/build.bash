@@ -7,7 +7,7 @@ maindest=./_site
 rm -rf $maindest
 mkdir -p $maindest
 bundle exec jekyll build
-cp index.html $maindest
+cp index.html CNAME $maindest
 
 for ss in $subsites; do
 	subdest=$maindest/$ss

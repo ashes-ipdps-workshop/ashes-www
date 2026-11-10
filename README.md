@@ -56,7 +56,7 @@ navigate to localhost:4000/2025/index.html in your browser and you should see th
 - Follow **quickstart** at https://jekyllrb.com/docs/ to create a local Jekyll environment under `ashes-www/2021`
 - Make change locally and confirm the updated website in the local Jekyll environment
 - `git push` ## this step will trigger the [deployment action](https://github.com/ashes-ipdps-workshop/ashes-www/blob/main/.github/workflows/deploy.yml)
-- Confirm the updated website at https://ashes-ipdps-workshop.github.io/ashes-www/2021/
+- Confirm the updated website at https://www.ashes-hpc.org/2021/
 
 ## Detail of The Deloyment Action
 The [deployment action](https://github.com/ashes-ipdps-workshop/ashes-www/blob/main/.github/workflows/deploy.yml) performs the script
@@ -64,5 +64,11 @@ at [./maint/build.bash](https://github.com/ashes-ipdps-workshop/ashes-www/blob/m
 and builds the static html files for each of them.
 
 For every newly added subsite, please add the folder name in `build.bash`.
+
+## Custom Domain
+The site is served at https://www.ashes-hpc.org. The domain is set in the `CNAME` file at the
+repository root; `build.bash` copies it into `_site` so every deployment to the `gh-pages` branch
+keeps it. The same domain must also be entered under *Settings > Pages > Custom domain* of this
+repository on GitHub (a domain can be attached to only one repository at a time).
 
 ## Setting
