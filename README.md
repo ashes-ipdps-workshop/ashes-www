@@ -52,15 +52,15 @@ navigate to localhost:4000/2025/index.html in your browser and you should see th
 
 ### Getting Jekyll
 
-- `git clone git@github.com:pmodels/ashes-www.git ashes-www/`
+- `git clone git@github.com:ashes-ipdps-workshop/ashes-www.git ashes-www/`
 - Follow **quickstart** at https://jekyllrb.com/docs/ to create a local Jekyll environment under `ashes-www/2021`
 - Make change locally and confirm the updated website in the local Jekyll environment
-- `git push` ## this step will trigger the [deployment action](https://github.com/pmodels/ashes-www/blob/master/.github/workflows/deploy.yml)
-- Confirm the updated website at https://pmodels.github.io/ashes-www/2021/
+- `git push` ## this step will trigger the [deployment action](https://github.com/ashes-ipdps-workshop/ashes-www/blob/main/.github/workflows/deploy.yml)
+- Confirm the updated website at https://ashes-ipdps-workshop.github.io/ashes-www/2021/
 
 ## Detail of The Deloyment Action
-The [deployment action](https://github.com/pmodels/ashes-www/blob/master/.github/workflows/deploy.yml) performs the script
-at [./maint/build.bash](https://github.com/pmodels/ashes-www/blob/master/maint/build.bash). The `build.bash` script traverses all subsite folders
+The [deployment action](https://github.com/ashes-ipdps-workshop/ashes-www/blob/main/.github/workflows/deploy.yml) performs the script
+at [./maint/build.bash](https://github.com/ashes-ipdps-workshop/ashes-www/blob/main/maint/build.bash). The `build.bash` script traverses all subsite folders
 and builds the static html files for each of them.
 
 For every newly added subsite, please add the folder name in `build.bash`.

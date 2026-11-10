@@ -9,9 +9,12 @@ name: Site deployment
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
   test:
@@ -39,7 +42,7 @@ jobs:
       uses: rlespinasse/git-commit-data-action@v1.x
 
     - name: Deploy site
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
