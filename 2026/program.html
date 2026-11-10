@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="style/general.css" rel="stylesheet" type="text/css">
+    <title>AsHES Workshop</title>
+  </head>
+
+  <body>
+  <div id="main-frame">
+  <!--<div id=heading style="background-image: url(pics/head_bkground.png)">-->
+  <div id="heading">
+    <br>
+    <table style="width:100%">
+      <tr>
+        <td width="30%" border="1">
+            <div align="left"><img src="pics/ipdps2026-logo-sq.jpg" border="0" width="300" alt="IPDPS 2026 square logo"/></div>
+        </td>
+        <td width="60%" align="center">
+          <div id="title" align="center">
+            The Sixteenth International Workshop on
+            <br>Accelerators and Hybrid Emerging Systems
+            <br> (AsHES)
+            <br>
+          </div>
+
+          <div id="subtitle" align="center">
+            <br> To be held in conjunction with
+            <br><font color="#FFF" style="font-weight: bold;" >40th IEEE International Parallel and Distributed Processing Symposium
+            <br> New Orleans, USA
+	    <br> May 25, 2026</font>
+          </div>
+        </td>
+      	<td width=“10%”><div align="left"><a href="http://www.ipdps.org">
+            <img src="pics/ipdps2026-logo-300.jpg" border="0" width="250" alt="IPDPS 2026 logo"/></a></div>
+        </td>
+      </tr>
+      <tr valign="bottom">
+        <td colspan="3"><br/>
+          <div id="topnavigation">
+            <ul>
+              <li><a href="index.html" class="rborder">HOME</a></li>
+              <li><a href="organizers.html" class="rborder lborder">ORGANIZERS</a></li>
+              <li><a href="cfp.html" class="rborder lborder">CALL FOR PAPERS</a></li>
+              <li><a href="reg.html" class="rborder lborder">REGISTRATION</a></li>
+              <li><a href="program.html" class="rborder lborder">PROGRAM</a></li>
+              <li><a href="submission.html" class="rborder lborder">SUBMISSION</a></li>
+              <li><a href="contact.html" class="lborder">CONTACT US</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- End of heading -->
+
+  <div id="sub-frame">
+  <div class="midBox1">
+
+<h1>Keynote</h1>
+<h3>8:30</h3>
+<ul>
+  <li> Dr. William F. Godoy, Oak Ridge National Laboratory </li>
+  <li>
+      Title: Practical, portable, and productive programming systems for heterogeneous HPC
+  </li>
+  <li>
+      Abstract: The rising complexity of exascale and future heterogeneous systems has posed interesting challenges for the programmability, productivity, and performance portability of high-performance computing (HPC) and AI applications.  In this talk I present our US Department of Energy (DOE) funded research efforts at Oak Ridge National Laboratory on: i) high-productivity programming for HPC using the Julia and Mojo languages, and ii) leveraging state-of-the-art AI large language models (LLMs) for HPC programming. Modern languages like Julia and Mojo attempt to solve the two-language problem that separates development efforts between domain-scientist and software development teams. First, we showcase our research efforts running Julia on the Frontier leadership computing system and the development of our flagship performance portable JACC.jl framework and its user community that push the envelope on portable programming for future heterogeneous CPU+multi-GPU nodes leveraging Julia’s LLVM-powered unique capabilities for productive scientific computing. We then discuss the very first study on the novel, and yet stable, industry-funded and MLIR-powered Mojo language targeting the Python ecosystem for portable-GPU science kernels. Second, we highlight our research efforts on how LLMs can learn HPC code patterns at a low-cost exemplified in our pioneer work on the evaluation of LLMs for HPC code generation followed by our recent ChatBLAS ChatHPC, ChatMPI, Fortran to C++ translation, multimodality, and agentic AI exploration efforts that is preparing us for the DOE’s Genesis mission. Hence, we continue to advance the programming systems ecosystem for the next-generation of supercomputing dominated by heterogeneous architectures in the era of AI.
+  </li>
+  <li>
+      Bio: William F. Godoy is a Senior Computer Scientist at Oak Ridge National Laboratory. His research interests are in HPC, programming systems, workflows, AI for HPC, and energy efficiency. He has worked extensively in DOE projects focusing on HPC libraries (e.g. ADIOS2), applications (QMCPACK),  and programming systems. His recent work introduced the use of LLMs for HPC and the application of high-productivity languages for performance portable HPC: Julia and Mojo. He received his PhD in mechanical engineering from the State University of New York at Buffalo in 2009. He is a senior member of IEEE, a member of ACM serving in HPC venues and has co-authored more than 60 publications in the field of computer and computational science including several technical awards.
+  </li>
+</ul>
+
+<h1>Communications, Collectives, and Telemetry</h1>
+<h3>9:30</h3>
+<ul>
+  <li>
+    Paper Type: Long<br/>
+    103<br/>
+    <b>Optimizing Allreduce Operations for Modern Heterogeneous Architectures with Multiple Processes per GPU</b>
+  </li>
+</ul>
+
+<h2>Break</h2>
+<h3>10:00</h3>
+
+<h1>GPUs, Accelerators, and Runtime/Programming Models</h1>
+<h3>10:30</h3>
+<ul>
+  <li>
+    Paper Type: Long<br/>
+    110<br/>
+    <b>Exploring C++ Standard Parallelism for GPU Programming in a Particle-In-Cell Application</b>
+  </li>
+  <li>
+    11:00<br/>
+    Paper Type: Long<br/>
+    109<br/>
+    <b>A Statically Scheduled Vector Accelerator with Explicit Data Movement Control</b>
+  </li>
+  <li>
+    11:30<br/>
+    Paper Type: Long<br/>
+    106<br/>
+    <b>Quantitative Characterization of Host-Initiated CUDA Memory Allocators: Performance, Fragmentation, and Concurrency Trade-offs</b>
+  </li>
+</ul>
+
+<h2>Lunch Break</h2>
+<h3>12:00</h3>
+
+<h1>Systems, Memory, and Runtime Adaptation</h1>
+<h3>1:30</h3>
+<ul>
+  <li>
+    Paper Type: Short<br/>
+    107<br/>
+    <b>Adapting Workloads for CXL-Based Disaggregated-Memory Systems</b>
+  </li>
+  <li>
+    1:50<br/>
+    Paper Type: Long<br/>
+    108<br/>
+    <b>Towards an Adaptive Runtime System for Cloud-Native HPC</b>
+  </li>
+  <li>
+    2:20<br/>
+    Paper Type: Short<br/>
+    104<br/>
+    <b>Incidence Constraints in Hypergraph Partitioning on GPU</b>
+  </li>
+  <li>
+    2:40<br/>
+    Paper Type: Long<br/>
+    102<br/>
+    <b>Energy–Performance Trade-offs in Federated Learning with SmartNIC-Enabled Communication on HPC Systems</b>
+  </li>
+</ul>
+
+<h2>Break</h2>
+<h3>3:10</h3>
+
+<h1>Scientific AI, Energy/Performance, and Partitioning</h1>
+<h3>3:30</h3>
+<ul>
+  <li>
+    Paper Type: Long<br/>
+    105<br/>
+    <b>A Benchmark Suite for Evaluating Scientific AI Workloads on GPUs</b>
+  </li>
+  <li>
+    4:00<br/>
+    Paper Type: Long<br/>
+    111<br/>
+    <b>ET: Bridging the Gap on Energy Telemetry for Multi-GPU Communication Collectives</b>
+  </li>
+</ul>
+
+<h1>End of the workshop</h1>
+<h3>5:00</h3>
+  </div>
+</div>
+
+
+  <div id="footer">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="bottomnavigation">
+      <a href="index.html">home</a>
+      : <a href="organizers.html">organizers</a>
+      : <a href="cfp.html">call for papers</a>
+      : <a href="reg.html">registration</a>
+      : <a href="program.html">program</a>
+      : <a href="submission.html">submission</a>
+      : <a href="contact.html">contact us</a>
+    </div>
+
+    <div id="copyright">
+      <p>Copyright &copy; AsHES. All rights reserved.</p>
+    </div>
+  </div> <!-- End of footer -->
+  </div> <!-- End of main-frame -->
+  </body>
+</html>

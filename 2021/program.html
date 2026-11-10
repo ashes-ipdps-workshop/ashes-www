@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="style/general.css" rel="stylesheet" type="text/css">
+    <title>AsHES Workshop</title>
+  </head>
+
+  <body>
+  <div id="main-frame">
+  <!--<div id=heading style="background-image: url(pics/head_bkground.png)">-->
+  <div id="heading">
+    <br>
+    <table style="width:100%">
+      <tr>
+        <td width="30%" border="1"></td>
+        <td width="60%" align="center">
+          <div id="title" align="center">
+            The Eleventh International Workshop on
+            <br>Accelerators and Hybrid Emerging Systems 
+            <br> (AsHES)
+            <br>
+          </div>
+          <div id="subtitle" align="center">
+            <br>To be held in conjunction with
+            <!--
+            <br><font color="#FFF" style="font-weight: bold;" >35th IEEE International Parallel and Distributed Processing Symposium in 
+            <br> Portland, Oregon USA (May 17-21, 2021)</font>
+            -->
+            <br><font color="#FFF" style="font-weight: bold;" >35th IEEE International Parallel and Distributed Processing Symposium 
+            <br> Virtual Event (May 17-21, 2021)</font>
+          </div>
+        </td>
+      	<td width=“10%”><div align="left"><a href="http://www.ipdps.org">
+            <!--<img src="pics/ipdps2021_logo.jpeg" border="1" width="250" height="102" alt="IPDPS 2021 logo"/></a></div>-->
+            <img src="pics/IPDPS1600x800.jpg" border="1" width="250" height="125" alt="IPDPS 2021 logo"/></a></div>
+        </td>
+      </tr> 
+      <tr valign="bottom"> 
+        <td colspan="3"><br/>
+          <div id="topnavigation">
+            <ul>
+              <li><a href="index.html" class="rborder">HOME</a></li>
+              <li><a href="organizers.html" class="rborder lborder">ORGANIZERS</a></li>
+              <li><a href="cfp.html" class="rborder lborder">CALL FOR PAPERS</a></li>
+              <li><a href="reg.html" class="rborder lborder">REGISTRATION</a></li>
+              <li><a href="program.html" class="rborder lborder">PROGRAM</a></li>
+              <li><a href="submission.html" class="rborder lborder">SUBMISSION</a></li>
+              <li><a href="contact.html" class="lborder">CONTACT US</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- End of heading -->
+
+  <div id="sub-frame">
+  <div class="midBox1">
+    <h1>Keynote (09:45 am PDT)</h1>
+    <h4><b>Addressing Scalability Bottlenecks of DNN Training Through Hardware Heterogeneity: A View from the Perspectives of Memory Capacity and Energy Consumption</b></h4>
+    <h3><b>Dong Li, Department of Electrical Engineering and Computer Science, University of California, Merced</b></h3>
+    <h4><b>Abstract:</b>
+    <font color="#FFFFFF"><img src="pics/dongli.png" alt="Dong Li" border="1" align="right" class="right"/></font>
+    Training DNN can be extremely memory- and energy-consuming. With the increasing size of DNN models and prevalence of using power-hungry GPU, memory capacity and energy consumption are becoming major scalable bottlenecks of training DNN. In this talk, we study how to leverage hardware heterogeneity and runtime system innovation to address the above problem. 
+
+    From the memory perspective, we leverage the emerging heterogeneous big-memory system (HM) to increase memory capacity, and introduce a software runtime system, Sentinel. Sentinel automatically optimizes tensor placement and allocation on HM. By coordinating operating system (OS) and application runtime-level profiling to bridge the semantic gap between OS and applications, Sentinel enables tensor-level profiling. This novel profiling method enables co-allocation of tensors with similar lifetime and memory access frequency into the same pages, which avoids unnecessary data movement, improves tensor movement efficiency, and enables larger batch training on GPU. Sentinel outperforms seven state-of-the-art solutions in training throughput by 17%-2x.  
+
+    From the energy saving perspective, we introduce a server architecture with both GPU and FPGA in a single machine. Such architecture provides flexibility to run operations of DNN training on power-efficient FPGA to save energy. Furthermore, we introduce a software framework, hyper-training, that schedules operations and maps them into FPGA and GPU based on offline analysis and characterization of operations to avoid performance loss. We show that with GPU and FPGA, hyper-training reduces energy consumption by 41% on average (up to 60%) without loss in training throughput; Hyper-training effectively enforces power caps with 11% performance improvement than without hyper-training.
+    </h4>
+    <h4><b>Bio:</b>
+     Dong Li is an associate professor at EECS at University of California, Merced. Previously, he was a research scientist at the Oak Ridge National Laboratory (ORNL), studying computer architecture and programming model for next generation supercomputer systems. Dong earned his PhD in computer science from Virginia Tech. His research focuses on high performance computing (HPC), and maintains a strong relevance to computer systems. The core theme of his research is to study how to enable scalable and efficient execution of enterprise and scientific applications on increasingly complex large-scale parallel systems. Dong received a CAREER Award from the National Science Foundation in 2016, and an ORNL/CSMD Distinguished Contributor Award in 2013. His paper in SC'14 was nominated as the best student paper; His paper in ASPLOS'21 won the distinguished artifact award. He is also the lead PI for NVIDIA CUDA Research Center at UC Merced. He is a review board member of IEEE Transaction on Parallel and Distributed Systems (TPDS).
+    </h4>
+  </div>
+
+  <div class="midBox1">
+    <h1>Opening Statement</h1>
+    <h3>6:00 am - 6:10 am PDT</h3>
+    <h3>Min Si, Argonne National Laboratory</h3>
+
+    <h1>Session One: Emerging systems for Machine Learning</h1>
+    <h3>6:10 am - 7:10 am PDT</h3>
+    <h3>Session Chair: Lena Oden, FernUniversität in Hagen</h3>
+    <ul>
+      <li>
+        <b><a href="slides/AsHES2021_Nakamura.pptx">Time-Division Multiplexing for FPGA Considering CNN Model Switch Time</a></b><br/>
+        Tetsuro Nakamura, Shogo Saito, Kei Fujimoto, Masashi Kaneko, Akinori Shiraga
+      </li>
+      <li>
+        <b><a href="slides/AsHES2021_Shamimul.pptx">Design Space Exploration of Emerging Memory Technologies for Machine Learning Applications</a></b><br/>
+        S.M.Shamimul Hasan, Neena Imam, Ramakrishnan Kannan, Srikanth Yoginath, Kuldeep Kurte
+      </li>
+    </ul>
+
+    <h2>Break 7:10 am - 7:45 am PDT</h2>
+
+    <h1>Session Two: GPUs Computing</h1>
+    <h3>7:45 am - 9:45 am PDT</h3>
+    <h3>Simon Garcia de Gonzalo, Barcelona Supercomputing Center</h3>
+    <ul>
+      <li>
+        <b><a href="slides/AsHES2021_Liu.pptx">Accelerating Radiation Therapy Dose Calculation with Nvidia GPUs</a></b><br/>
+        Felix Liu, Niclas Jansson, Artur Podobas, Albin Fredriksson, Stefano Markidis
+      </li>
+      <li>
+        <b><a href="slides/AsHES2021_Oden.pptx">Improving Cryptanalytic Applications with Stochastic Runtimes on GPUs</a></b><br/>
+        Lena Oden, Jörg Keller
+      </li>
+      <li>
+        <b><a href="slides/AsHES2021_Loe.pdf">Experimental Evaluation of Multiprecision Strategies for GMRES on GPUs</a></b><br/>
+        Jennifer Loe, Christian A. Glusa, Ichitaro Yamazaki, Erik G. Boman, Sivasankaran Rajamanickam
+      </li>
+      <li>
+        <b><a href="slides/AsHES2021_Choi.pdf">GPU-aware Communication with UCX in Parallel Programming Models: Charm++, MPI, and Python</a></b><br/>
+        Jaemin Choi, Zane Fink, Sam White, Nitin Bhat, David F. Richards, Laxmikant V. Kale
+      </li>
+    </ul>
+
+  </div>
+
+
+<!-- <div class="midBox1">
+  <h1>Best Paper Award</h1>
+  <h3>TBD</h3>
+</div> -->
+
+<!-- <div class="midBox1">
+	<h1>Closing Remarks</h1>
+	<h3>TBD</h3>
+</div> -->
+</div>
+
+
+
+  <div id="footer">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="bottomnavigation">
+      <a href="index.html">home</a>
+      : <a href="organizers.html">organizers</a>
+      : <a href="cfp.html">call for papers</a>
+      : <a href="reg.html">registration</a>
+      : <a href="program.html">program</a>
+      : <a href="submission.html">submission</a>
+      : <a href="contact.html">contact us</a>
+    </div>
+
+    <div id="copyright">
+      <p>Copyright &copy; ASHES. All rights reserved.</p>
+    </div>
+  </div> <!-- End of footer -->
+  </div> <!-- End of main-frame -->
+  </body>
+</html>
