@@ -1,7 +1,7 @@
 /* Generic Settings */
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #000000;
+  color: #0f2c39;
   font-size: 13px;
   text-align: justify;
   background-color:#fff;
@@ -31,8 +31,8 @@ h1 {
   font-size: 14px;
   color: white;
 
-  /* 2026 color */
-  background-color: #533091;
+  /* 2027 color */
+  background-color: #05213f;
 
   margin: 20px 0px 10px 0px;
   padding: 8px 0px 0px 10px;
@@ -42,7 +42,7 @@ h1 {
 h2 {
   font-size: 14px;
   color: #FFF;
-  background-color:#fbb616;
+  background-color:#62ba3c;
   margin: 20px 0px 10px 0px;
   padding: 8px 0px 0px 10px;
   height: 25px;
@@ -65,10 +65,6 @@ li {
 
 p {
   line-height:19px;
-}
-
-a {
-  color:#E96F35;
 }
 
 bold {
@@ -115,7 +111,7 @@ bold {
 }
 
 #subsubtitle {
-  color:black;
+  color:#0f2c39;
   line-height:18px;
   font-size:14px;
   font-weight:bold;
@@ -128,8 +124,8 @@ bold {
   background-repeat: no-repeat;
   background-size: 25%;
 
-  /* 2026 color */
-  background-color: #533091;
+  /* 2027 color */
+  background-color: #05213f;
 }
 
 
@@ -138,8 +134,8 @@ bold {
 #topnavigation {
   height:35px;
 
-  /* 2026 color */
-  background-color: #fbb616;
+  /* 2027 color */
+  background-color: #62ba3c;
   color:#ffffff;
   font-size:12px;
   line-height:18px;
@@ -158,19 +154,19 @@ bold {
   padding:6px 35px 6px 35px;
 }
 
-/* 2026 color */
+/* 2027 color */
 #topnavigation a:hover {
-  background-color:#d99903;
+  background-color:#4e9a2f;
 }
 
-/* 2026 color */
+/* 2027 color */
 #topnavigation .rborder {
-  border-right:1px solid #fbb616;
+  border-right:1px solid #62ba3c;
 }
 
-/* 2026 color */
+/* 2027 color */
 #topnavigation .lborder {
-  border-left:1px solid #fbb616;;
+  border-left:1px solid #62ba3c;;
 }
 
 
@@ -180,8 +176,8 @@ bold {
   clear:both;
   height:24px;
 
-  /* 2026 color */
-  background-color: #533091;
+  /* 2027 color */
+  background-color: #05213f;
 
   color:#fff;
   text-align:center;
